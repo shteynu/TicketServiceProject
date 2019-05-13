@@ -1,6 +1,8 @@
 package application.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -30,9 +32,11 @@ public class Ticket {
 	@JsonBackReference
 	private Event event;
 	
-	@ManyToOne
+	/*@ManyToOne
 	@JsonBackReference
-	private AgeType ageType;
+	private AgeType ageType;*/
+	@Enumerated(EnumType.STRING)
+	private AgeType ageType; 
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonBackReference

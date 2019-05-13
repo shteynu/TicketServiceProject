@@ -21,5 +21,6 @@ public class UserDto {
 	
 	private UserRoleDto userRole;
 	private String userPhone;
+	private String userName;
 
 }

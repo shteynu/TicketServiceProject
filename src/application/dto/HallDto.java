@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 
 public class HallDto {
 
-	private List<EventDto> events = new ArrayList<>();
+	/*private List<EventDto> events = new ArrayList<>();
 
-	private List<SeatDto> seats = new ArrayList<>();
+	private List<SeatDto> seats = new ArrayList<>();*/
 
 	private String hallName;
 
@@ -24,5 +24,7 @@ public class HallDto {
 	private Integer seatsTotal;
 
 	private String layout;
+	
+	private Integer rowsTotal;
 
 }

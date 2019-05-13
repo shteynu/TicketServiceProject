@@ -37,5 +37,6 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private UserRole userRole;
 	private String userPhone;
+	private String userName;
 
 }

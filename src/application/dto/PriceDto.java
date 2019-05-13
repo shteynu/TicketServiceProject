@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 
 public class PriceDto {
 
-	private List<SeatDto> seats = new ArrayList<>();
+	/*private List<SeatDto> seats = new ArrayList<>();*/
 
 	private Double pricePrice;
 

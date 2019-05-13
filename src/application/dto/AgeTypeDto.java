@@ -1,20 +1,24 @@
 package application.dto;
 
-import java.util.ArrayList;
-import java.util.List;
+public enum AgeTypeDto {
+	Adult(1),
+	Child(0.5),
+	Senior(0.5),
+	Soldier(0.3);
+	
+	private double coefficient;
+	
+	private AgeTypeDto(double coefficient) {
+		this.coefficient = coefficient;
+	}
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+	private double getCoefficient() {
+		return coefficient;
+	}
+	
+	
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-
-public class AgeTypeDto {
-
-	private List<TicketDto> tickets = new ArrayList<>();
-
-	private Integer coefficient;
+	
+	
 
 }

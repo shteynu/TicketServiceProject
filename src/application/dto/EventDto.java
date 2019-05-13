@@ -18,8 +18,8 @@ import lombok.NoArgsConstructor;
 public class EventDto {
 	
 	private Long eventId;
-	private List<TicketDto> tickets = new ArrayList<>();
-	private List<PriceDto> prices = new ArrayList<>();
+	/*private List<TicketDto> tickets = new ArrayList<>();
+	private List<PriceDto> prices = new ArrayList<>();*/
 	private String eventName;
 	private LocalDate eventDate;
 	private LocalTime eventTime;

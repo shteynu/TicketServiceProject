@@ -11,9 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 
-public class SeatTypeDto {
-	
-	private String seatType;
-		
-	/*private List<PriceDto> prices = new ArrayList<>();*/
+public class AgeTypeDto_Old {
+
+	private List<TicketDto> tickets = new ArrayList<>();
+
+	private Integer coefficient;
+
 }

@@ -44,5 +44,7 @@ public class Hall {
 	private Integer seatsTotal;
 	
 	private String layout;
+	
+	private Integer rowsTotal;
 
 }
