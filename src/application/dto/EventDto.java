@@ -30,5 +30,4 @@ public class EventDto {
 	private StatusDto statusDto;
 	
 	
-
 }

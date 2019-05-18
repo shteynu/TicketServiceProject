@@ -41,5 +41,11 @@ public class Price {
 	@JsonBackReference
 	private Event event;
 	
+	private Integer rowBegin;
+	private Integer rowend;
+	private Integer columnBegin;
+	private Integer columnEnd;
+	
+	
 
 }

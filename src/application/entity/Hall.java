@@ -46,5 +46,9 @@ public class Hall {
 	private String layout;
 	
 	private Integer rowsTotal;
+	@OneToMany(mappedBy = "hall", cascade = CascadeType.ALL)
+	@JsonManagedReference
+	private List<SeatHall> seatsHall = new ArrayList<>();
+	
 
 }

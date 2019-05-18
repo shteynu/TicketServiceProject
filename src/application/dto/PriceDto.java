@@ -20,5 +20,13 @@ public class PriceDto {
 	private SeatTypeDto seatTypeDto;
 
 	private EventDto eventDto;
+	
+	private Integer rowBegin;
+	private Integer rowend;
+	private Integer columnBegin;
+	private Integer columnEnd;
+	
+	
+
 
 }
