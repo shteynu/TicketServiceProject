@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package application.entity;
 
 public enum EventType {
@@ -8,3 +9,15 @@ public enum EventType {
 	DANCE
 	
 }
+=======
+package application.entity;
+
+public enum EventType {
+	MOVIE,
+	CONCERT,
+	SPECTACLE,
+	EXPOSITION,
+	DANCE
+	
+}
+>>>>>>> refs/remotes/origin/master
