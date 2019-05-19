@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package application.entity;
 
 public enum Status {
@@ -7,3 +8,14 @@ public enum Status {
 	
 
 }
+=======
+package application.entity;
+
+public enum Status {
+	visible,
+	invisible,
+	deleted
+	
+
+}
+>>>>>>> refs/remotes/origin/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /bin/
 /target/
 /.settings/
@@ -20,4 +21,28 @@ local.properties
 nbproject
 .~lock.*
 .buildpath
+=======
+/bin/
+/target/
+/.settings/
+.project
+.classpath
+
+### Eclipse ###
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# IDE files #
+#############
+nbproject
+.~lock.*
+.buildpath
+>>>>>>> refs/remotes/origin/master
 /.idea/

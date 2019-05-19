@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package application.entity;
 
 public enum UserRole {
@@ -8,3 +9,15 @@ public enum UserRole {
 	
 
 }
+=======
+package application.entity;
+
+public enum UserRole {
+	admin,
+	manager,
+	user,
+	cashier
+	
+
+}
+>>>>>>> refs/remotes/origin/master
