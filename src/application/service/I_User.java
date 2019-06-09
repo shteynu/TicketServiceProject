@@ -1,6 +1,9 @@
 package application.service;
 
 import java.time.LocalDate;
+import java.util.List;
+
+import application.entity.User;
 
 public interface I_User {
 
@@ -56,4 +59,7 @@ public interface I_User {
 	 * Method show a list of events by in the date range and hall type Tables in DB
 	 * - Halls-hallName-hallId - Events eventDate).
 	 */
+	List<User> getAll();
+	
+	String[] getEmails();
 }

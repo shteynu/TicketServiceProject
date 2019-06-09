@@ -1,11 +1,18 @@
 package application.service;
 
 import java.time.LocalDate;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import application.entity.User;
+import application.repository.UserRepo;
+
 @Service
-public class User extends Guest implements I_User {
+public class UserService extends Guest implements I_User {
+	@Autowired
+	UserRepo users;
 
 	@Override
 	public void checkingPassword(String userEmail, String UserPass) {
@@ -47,5 +54,18 @@ public class User extends Guest implements I_User {
 	public void getHallScheme(String hallName) {
 		// TODO Auto-generated method stub
 	}
+
+	@Override
+	public List<User> getAll() {
+		return users.findAll();
+	}
+
+	@Override
+	public String[] getEmails() {
+			
+		return users.getAlleMails();
+	}
+
+	
 
 }

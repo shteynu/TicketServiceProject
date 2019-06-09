@@ -21,3 +21,5 @@ nbproject
 .~lock.*
 .buildpath
 /.idea/
+/application.properties
+/pom.xml

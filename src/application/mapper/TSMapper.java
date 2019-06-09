@@ -3,6 +3,8 @@ package application.mapper;
 import java.util.List;
 
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.factory.Mappers;
 
 import application.dto.EventDto;
 import application.dto.HallDto;
@@ -21,8 +23,10 @@ import application.entity.SeatType;
 import application.entity.Ticket;
 import application.entity.User;
 
-@Mapper
+@Mapper(componentModel="spring")
 public interface TSMapper {
+	TSMapper MAPPER = Mappers.getMapper( TSMapper.class );
+	
 	EventDto toEventDto(Event event);
 	List<EventDto> toEventDtos(List<Event> events);
 	Event toEvent(EventDto eventDto);
@@ -52,6 +56,7 @@ public interface TSMapper {
 	Ticket toTicket(TicketDto ticketDto);
 	
 	UserDto toUserDto(User user);
+	//@Mapping(target = "userEmail", source = "userEmail",defaultExpression = "java(java.util.UUID.randomUUID().toString())")
 	List<UserDto> toUserDtos(List<User> users);
 	User toUser(UserDto userDto);
 	

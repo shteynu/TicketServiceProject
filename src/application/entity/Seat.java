@@ -41,5 +41,7 @@ public class Seat {
 	
 	@OneToOne(fetch=FetchType.LAZY, mappedBy="seat", cascade=CascadeType.ALL)
 	private Ticket ticket;
+	
+	private Boolean reserved;
 
 }
